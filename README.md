@@ -60,33 +60,29 @@ auth-fullstack/
 │   ├── server.js
 │   └── package.json
 │
-frontend/
-│
-├── node_modules/
-│
-├── public/
-│
-├── src/
-│   │
-│   ├── assets/
-│   │
-│   ├── pages/
-│   │   ├── ForgotPassword.jsx
-│   │   ├── Register.jsx
-│   │   ├── ResetPassword.jsx
-│   │   └── VerifyAccount.jsx
-│   │
-│   ├── services/
-│   │   └── authService.js
-│   │
-│   ├── App.css
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-│
-└── package.json
-│
-└── README.md
+├──frontend/
+│  ├── public/
+│  ├── src/
+│  |   └── assets/
+│  |   │
+│  |   ├── pages/
+│  |   │   ├── ForgotPassword.jsx
+│  |   │   ├── Register.jsx
+│  |   │   ├── ResetPassword.jsx
+│  |   │   └── VerifyAccount.jsx
+│  |   │
+│  |   ├── services/
+│  |   │   └── authService.js
+│  |   │
+│  |   ├── App.css
+│  |   ├── App.jsx
+│  |   ├── index.css
+│  |   └── main.jsx
+│  |
+|  ├── package.json
+│  |
+|  ├── README.md
+└
 ```
 
 ---
@@ -120,7 +116,7 @@ Iniciar servidor:
 ```bash
 npm run dev
 ```
-# Servidor 
+## Backend ejecutándose en: 
 ```bash
 http://localhost:3000
 ```
@@ -145,7 +141,7 @@ Ejecutar proyecto:
 ```bash
 npm run dev
 ```
-# Aplicación
+## Frontend ejecutándose en:
 ```bash
 http://localhost:5173
 ```
@@ -187,6 +183,57 @@ Utilizando Postman con POST
 /api/auth/reset-password/:token
 ```
 ---
+# API Endpoints
+
+## Registrar usuario
+
+POST `/api/auth/register`
+
+Body:
+
+```json
+{
+  "name": "Emilia",
+  "email": "emilia@test.com",
+  "password": "123456"
+}
+```
+
+---
+
+## Verificar cuenta
+
+GET `/api/auth/verify/:token`
+
+---
+
+## Recuperar contraseña
+
+POST `/api/auth/forgot-password`
+
+Body:
+
+```json
+{
+  "email": "emilia@test.com"
+}
+```
+
+---
+
+## Restablecer contraseña
+
+POST `/api/auth/reset-password/:token`
+
+Body:
+
+```json
+{
+  "newPassword": "12345678"
+}
+```
+
+---
 
 # Evidencia
 
@@ -198,9 +245,10 @@ Utilizando Postman con POST
 
 <img width="865" height="479" alt="Captura de pantalla 2026-05-13 152747" src="https://github.com/user-attachments/assets/ba56aea1-eea5-41f9-98d3-ae38b2b70f0e" />
   
-- Autentificación
+---
+# Autor
 
-<div align="center"> <img width="900" src="https://github.com/user-attachments/assets/a7bbce26-5102-4a92-a311-f5782c5fb269" /> </div>
+Emilia Tana 
 
 ---
 
