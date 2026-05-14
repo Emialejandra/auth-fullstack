@@ -31,8 +31,10 @@ El sistema permite:
 
 ## Backend
 - Node.js
+- Express
 - Mongoose
 - bcryptjs
+- jsonwebtoken
 - cors
 - nodemon
 
@@ -82,7 +84,7 @@ auth-fullstack/
 |  ├── package.json
 │  |
 |  ├── README.md
-└
+
 ```
 
 ---
@@ -156,32 +158,12 @@ El sistema permite registrar nuevos usuarios mediante:
 - Contraseña
 
 Durante el registro:
-- se valida los campos
-- Verifica que el correo no exista
+- se validan los campos
+- Se verifica que el correo no exista
 - La contraseña se encripta con bcryptjs
 - Se genera un token JWT de verificación
 - Los datos son almacenados en MongoDB Atlas
-  
----
-# Verificación de cuenta 
-Utilizando Postman con GET
-```bash
-/api/auth/verify/TOKEN
-```
 
----
-# Recuperar contraseña
-Utilizando Postman con POST
-```bash
-/api/auth/forgot-password
-```
-
----
-# Restablecer contraseña
-Utilizando Postman con POST
-```bash
-/api/auth/reset-password/:token
-```
 ---
 # API Endpoints
 
