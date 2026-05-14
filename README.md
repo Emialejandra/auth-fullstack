@@ -94,7 +94,7 @@ auth-fullstack/
 ## 1. Clonar repositorio
 
 ```bash
-git clone https://github.com//ProyectoWeb.git 
+git clone https://github.com/Emialejandra/auth-fullstack.git
 ```
 
 ---
@@ -219,14 +219,27 @@ Body:
 
 # Evidencia
 
-- Módulo Registro
+## Módulo Registro
   
 <img width="883" height="512" alt="Captura de pantalla 2026-05-13 151358" src="https://github.com/user-attachments/assets/d8bb5540-baf7-41a0-95e9-3ad1ce15d725" />
+- Postman
+<img width="685" height="652" alt="Captura de pantalla 2026-05-13 194309" src="https://github.com/user-attachments/assets/da5e0afa-2e07-4731-ac9b-677e713c34ff" />
+
    
-- Módulo Recuperar contraseña
+## Módulo Recuperar contraseña
 
 <img width="865" height="479" alt="Captura de pantalla 2026-05-13 152747" src="https://github.com/user-attachments/assets/ba56aea1-eea5-41f9-98d3-ae38b2b70f0e" />
-  
+- Postman
+
+
+## Verificación de Cuenta en Postman
+
+<img width="667" height="575" alt="Captura de pantalla 2026-05-13 194349" src="https://github.com/user-attachments/assets/1ef34d6b-a6a7-4f6b-ab8c-456d64ac46a9" />
+
+## Restablecimiento de Contraseña en Postman
+
+<img width="815" height="474" alt="Captura de pantalla 2026-05-13 194050" src="https://github.com/user-attachments/assets/73a605f5-9a30-4f98-9885-8ac78e31db85" />
+
 ---
 # Autor
 
@@ -242,6 +255,6 @@ Desarrollo de Aplicaciones Web
 
 # Estado del Proyecto
 
-En desarrollo
+El sistema actualmente implementa registro, verificación de cuenta y recuperación de contraseña mediante JWT. El envío automático de correos electrónicos aún se encuentra en desarrollo.
 
 ---
